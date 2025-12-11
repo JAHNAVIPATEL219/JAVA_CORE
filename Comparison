@@ -1,0 +1,17 @@
+package JAVATASK;
+
+import java.util.Scanner;
+
+public class CompareClass {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int userNum=sc.nextInt();
+        int b=30;
+        if(b>userNum){
+            System.out.println("Greater");
+        }
+        else{
+            System.out.println("Smaller");
+        }
+    }
+}
