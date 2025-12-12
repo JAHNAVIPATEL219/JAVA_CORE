@@ -1,0 +1,45 @@
+package JAVADSA;
+
+import java.sql.SQLOutput;
+
+public class StringMethodsDemo {
+    public static void main(String[] args) {
+        String name="Jahnavi";
+        System.out.println(name);
+        //length of string
+        int value=name.length();
+        System.out.println(value);
+        //Lowercase
+        String lowerCase=name.toLowerCase();
+        System.out.println(lowerCase);
+        //Uppercase
+        String upperCase=name.toUpperCase();
+        System.out.println(upperCase);
+        //trim()
+        String nontrimed="    Jahnavi    ";
+        System.out.println(nontrimed);
+
+        String trimed=nontrimed.trim();
+        System.out.println(trimed);
+        //substring
+        System.out.println(name.substring(3));
+        //(start,end) substring
+        System.out.println(name.substring(3,7));
+        //replace the letter in string
+        System.out.println(name.replace('i','e'));
+        System.out.println(name.replace("navi","vini"));
+        System.out.println(name.replace("navi","i"));
+        //startsWith
+        System.out.println(name.startsWith("Jah"));
+        //endsWith
+        System.out.println(name.endsWith("ve"));
+        //charAt
+        System.out.println(name.charAt(5));
+        //indexOf
+        System.out.println(name.indexOf("vi"));
+        //equals
+        System.out.println(name.equals("janu"));
+        //equalsignoreCase
+        System.out.println(name.equalsIgnoreCase("JAHNAVI"));
+    }
+}
