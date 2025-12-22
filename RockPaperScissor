@@ -1,0 +1,60 @@
+package JAVATASK;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class RockPaperScissor {
+    public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+        Random rd=new Random();
+
+        System.out.println("Enter User Choice(1|2|3)");
+        int YourChoice=sc.nextInt();
+
+
+        System.out.println("User CHoice:");
+        switch (YourChoice){
+            case 1:
+                System.out.println("Rock");
+                break;
+            case 2:
+                System.out.println("Paper");
+                break;
+            case 3:
+                System.out.println("Scissor");
+                break;
+        }
+
+
+        System.out.println("Computer CHoice:");
+        int ComputerChoice=rd.nextInt(1,4);
+        if(ComputerChoice==1){
+            System.out.println("Rock");
+        }
+        else if(ComputerChoice==2){
+            System.out.println("Paper");
+        }
+        else if(ComputerChoice==3){
+            System.out.println("Scissor");
+        }
+
+        System.out.println("The winner is:");
+        if(YourChoice==1 && ComputerChoice==2){
+            System.out.println("Computer wins");
+        } else if (YourChoice==1 && ComputerChoice==3) {
+            System.out.println("User wins");
+        } else if (YourChoice==2 && ComputerChoice==3) {
+            System.out.println("Computer wins");
+        } else if (ComputerChoice==1 && YourChoice==2) {
+            System.out.println("User wins");
+        }else if (YourChoice==3 && ComputerChoice==1) {
+            System.out.println("Computer wins");
+        } else if (YourChoice==3 && ComputerChoice==2) {
+            System.out.println("User wins");
+        } else if(YourChoice==1 && ComputerChoice==1 || YourChoice==2 && ComputerChoice==2||YourChoice==3 && ComputerChoice==3){
+            System.out.println("Tie");
+        }
+
+    }
+}
