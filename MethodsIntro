@@ -1,0 +1,33 @@
+package JAVADSA;
+
+import java.util.Scanner;
+
+public class MethodsIntro {
+    public static void main(String[] args) {
+        System.out.println(sum());
+        sum1();
+    }
+
+    //****return the value****
+    static int sum(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter num1:");
+        int num1=sc.nextInt();
+        System.out.println("Enter num2:");
+        int num2=sc.nextInt();
+        int sum=num1+num2;
+        return sum;
+    }
+
+    //***without returning the value***
+    static void sum1(){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter num1:");
+        int n1=sc.nextInt();
+        System.out.println("Enter num2:");
+        int n2=sc.nextInt();
+        int sum1=n1+n2;
+        System.out.println(sum1);
+    }
+
+}
