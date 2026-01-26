@@ -1,0 +1,18 @@
+package JAVADSA.Methods;
+
+public class MethodParameter2 {
+    public static void main(String[] args) {
+        System.out.println(sum(20,30));
+        System.out.println(greet("Janu"));
+    }
+    //**passing the value of numbers when you are calling the method in main()**//
+    static int sum(int a,int b){
+        int sum=a+b;
+        return sum;
+    }
+    //String parameter//
+    static String greet(String name){
+        String msg="Hello " +name;
+        return msg;
+    }
+}
