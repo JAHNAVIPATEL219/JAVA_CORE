@@ -1,0 +1,11 @@
+package JAVADSA.Methods;
+
+public class MethodStrings1 {
+    public static void main(String[] args) {
+        System.out.println(greet());
+    }
+    static String greet(){
+        String greeting="How Are You?";
+        return  greeting;
+    }
+}
