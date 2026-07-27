@@ -1,0 +1,16 @@
+package methodsPractice;
+
+public class methodsIntro {
+    static void print(){
+        System.out.println("HEYYYYY");
+    }
+
+    static void mrng(){
+        System.out.println("good");
+    }
+    public static void main(String[] args) {
+        print();
+        mrng();
+        mrng();
+    }
+}
